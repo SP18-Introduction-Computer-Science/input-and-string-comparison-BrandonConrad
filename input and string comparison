@@ -1,0 +1,20 @@
+string = open("string.txt","r")
+
+a_b = input(str("Which lines you want to print a or b? : "))
+
+count = 0
+for line in string.readlines() :
+    
+    if a_b == "b":
+        
+        if count % 2 == 0:
+            print("b index %d line from string file is :" %count)
+            print(line)
+        count += 1
+    
+    if a_b == "a":
+        
+        if count % 2 == 1:
+            print("a index %d line from string file is :" %count)
+            print(line)
+        count += 1
